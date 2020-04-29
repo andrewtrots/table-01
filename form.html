@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Form Sample</title>
+</head>
+<body>
+
+    <form method="post" action="https://formspree.io/xrgyzoaw">
+        <label>Client Name:
+            <input type="text" name="client-name" required placeholder="Your Name">
+        </label>
+        <br>
+        <label for="client-email">Client Email:</label>
+        <input type="email" name="client-email" id="client-email" required>
+        <br>
+        <label>Password:
+            <input type="password" name="client-password">
+        </label>
+        <br>
+        <label>Gender</label>
+        <br>
+        <label>
+            <input type="radio" name="client-gender" value="male">
+            Male
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="client-gender" value="female">
+            Female
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="client-gender" value="other" checked>
+            Other
+        </label>
+        <br>
+        <label>Car Plate
+            <input type="text" name="car-plate" required 
+            pattern="[A-Z]{2}[\d]{4}[A-Z]{2}" 
+            placeholder="AA1234BB" 
+            title="AA1234BB">
+        </label>
+        <br>
+        <input type="submit" value="SEND">
+        <input type="reset" value="BLANK">
+    </form>
+    
+</body>
+</html>
